@@ -165,7 +165,8 @@ class csvConvert:
     def convert_concepts(self):
         headings = ["Concept", "Label", "Definition", "Smart City Concept Model"]
 
-        with open(os.path.join(os.path.dirname(__file__), 'csv_output', 'Concepts.csv'), "w", newline='') as file_output:
+        with open(os.path.join(os.path.dirname(__file__), 'csv_output', 'Concepts.csv'), "w",
+                  newline='') as file_output:
             csv_output = csv.DictWriter(file_output, fieldnames=headings)
             csv_output.writeheader()
 
@@ -177,7 +178,8 @@ class csvConvert:
     def convert_entities(self):
         headings = ["Entity", "Concept", "Description", "Source"]
 
-        with open(os.path.join(os.path.dirname(__file__), 'csv_output', 'Entities.csv'), "w", newline='') as file_output:
+        with open(os.path.join(os.path.dirname(__file__), 'csv_output', 'Entities.csv'), "w",
+                  newline='') as file_output:
             csv_output = csv.DictWriter(file_output, fieldnames=headings)
             csv_output.writeheader()
 
@@ -186,15 +188,21 @@ class csvConvert:
                        "Description": item["Entity Description"] if item["Entity Description"] else item[
                            "Concept Description"], "Source": item["Source"]}
                 csv_output.writerow(row)
+
     def convert_data_structures(self):
         headings = ["Structure", "Description", "Source"]
 
-        with open(os.path.join(os.path.dirname(__file__), 'csv_output', 'Data_Structures.csv'), "w", newline='') as file_output:
+        with open(os.path.join(os.path.dirname(__file__), 'csv_output', 'Data_Structures.csv'), "w",
+                  newline='') as file_output:
             csv_output = csv.DictWriter(file_output, fieldnames=headings)
             csv_output.writeheader()
 
             for key, item in self.structures.items():
                 row = {"Structure": key, "Description": item["Description"], "Source": item["Source"]}
+
+
+def strip_savvi(text):
+    return text.split(":")[1]
 
 
 if __name__ == '__main__':
