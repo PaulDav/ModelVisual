@@ -1,0 +1,17 @@
+Entity,Concept,Description,Source
+Action,savvi:Action,An action that has been carried out as a part of responding to a NEED.,
+Attribute,savvi:Attribute,A state of a person or household.,
+Case,savvi:Case,A Case to coordinate the respose to a person or household.,fhir:EpisodeOfCare
+ContactEvent,savvi:ContactEvent,A record of an event in which the situation of a person or household was sought.,
+Household,savvi:Household,The household unit at a Residence,
+Need,savvi:Need,The need where assistance is required to mitigate a vulnerability.,fhir:EpisodeOfCare.diagnosis.condition 
+Organisation,"savvi:LeadOrganisation
+savvi:ResponsibleOrganisation
+savvi:DeliveryOrganisation
+savvi:SourceOrganisation","Includes local authority, company, institution, government agency, community group etc.",fhir:Organization
+Outcome,savvi:Outcome,"The resulting situation of a CASE, or a NEED",
+Person,savvi:Person,Designed to support data matching.,fhir:Person
+Plan,savvi:Plan,A set of planned actions designed to respond to a NEED over a period.,
+Residence,savvi:Residence,"A building, or a part of a building, designed to accommodate a single HOUSEHOLD.",
+RiskAssessment,savvi:RiskAssessment,A Categorisation of the Risk of a PERSON or HOUSEHOLD.,
+SituationAssessment,savvi:SituationAssessment,An understanding of the situation of a PERSON or HOUSEHOLD as a result of a contact.,

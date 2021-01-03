@@ -1,0 +1,33 @@
+Use Case,Concepts,Entities
+Send Attribute Data to the Lead Organisation,savvi:Attribute,Attribute
+,savvi:Household,Household
+,savvi:Person,Person
+,savvi:Provenance,
+,savvi:Residence,Residence
+,savvi:SourceOrganisation,Organisation
+,,
+,,
+,,
+,,
+,,
+,,
+Refer Case to a Responsible Organisation,savvi:Case,Case
+,savvi:Household,Household
+,savvi:LeadOrganisation,Organisation
+,savvi:Person,Person
+,savvi:Residence,Residence
+,savvi:ResponsibleOrganisation,
+,savvi:RiskAssessment,RiskAssessment
+,savvi:StratificationPolicy,
+,,
+,,
+,,
+,,
+Assess a Case,savvi:Case,Case
+,savvi:ContactEvent,ContactEvent
+,savvi:Household,Household
+,savvi:Need,Need
+,savvi:Person,Person
+,savvi:Residence,Residence
+,savvi:ResponsibleOrganisation,Organisation
+,savvi:SituationAssessment,SituationAssessment

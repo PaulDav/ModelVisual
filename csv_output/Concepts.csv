@@ -1,0 +1,20 @@
+Concept,Label,Definition,Smart City Concept Model
+savvi:Action,Action,An action that has been carried out as a part of responding to a NEED.,sccm:Event
+savvi:Area,Area,A geographic area,sccm:Place
+savvi:Attribute,Attribute,A state of a person or household.,sccm:State
+savvi:Case,Case,A container for information recording the history of events for a person or household who may have needs.,cssm:Case
+savvi:ContactEvent,Contact Event,A record of an event in which the situation of a person or household was sought.,sccm:Observation
+savvi:DeliveryOrganisation,Delivery Organisation,a service provider who delivers actions that respond to a NEED.,sccm:Organisation
+savvi:Household,Household,A collection of PERSONs who live together.,sccm:Organisation
+savvi:LeadOrganisation,Lead Organisation,An organisation responsible for coordinating a vulnerability initiative.,sccm:Organization
+savvi:Need,Need,The need where assistance is required to mitigate a vulnerability.,sccm:Objective
+savvi:Outcome,Outcome,"The resulting situation of a CASE, or a NEED",sccm:State
+savvi:Person,Person,"A Person who may be vulnerable, or who needs assistance.",sccm:Person
+savvi:Plan,Plan,A set of planned actions designed to respond to a NEED over a period.,sccm:Plan
+savvi:Provenance,Provenance,A record of the steps taken to prepare a peice of data.,sccm:Observation
+savvi:Residence,Residence,"A building, or a part of a building, designed to accommodate a single HOUSEHOLD.",sccm:Building
+savvi:ResponsibleOrganisation,Responsible Organisation,An organisation who is made responsible for a CASE.,sccm:Organization
+savvi:RiskAssessment,Risk Assessment,A Categorisation of the Risk of a PERSON or HOUSEHOLD.,sccm:Assumption
+savvi:SituationAssessment,Situation Assessment,An understanding of the situation of a PERSON or HOUSEHOLD as a result of a contact.,sccm:State
+savvi:SourceOrganisation,Source Organisation,An organisation that provides ATTRIBUTE data,sccm:Organization
+savvi:StratificationPolicy,Stratification Policy,A definition of the rules by which Risk Categories will be determined,sccm:Rule
