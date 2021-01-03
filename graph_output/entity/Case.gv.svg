@@ -8,9 +8,9 @@
  viewBox="0.00 0.00 618.00 338.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 334)">
 <polygon fill="white" stroke="transparent" points="-4,4 -4,-334 614,-334 614,4 -4,4"/>
-<!-- table_port23 -->
+<!-- table_port3 -->
 <g id="node1" class="node">
-<title>table_port23</title>
+<title>table_port3</title>
 <polygon fill="lightblue" stroke="transparent" points="488,-53 488,-67 542,-67 542,-53 488,-53"/>
 <polygon fill="none" stroke="black" points="488,-53 488,-67 542,-67 542,-53 488,-53"/>
 <text text-anchor="start" x="501.5" y="-58.4" font-family="Arial" font-size="7.00">Attribute</text>
@@ -80,14 +80,14 @@
 </a>
 </g>
 </g>
-<!-- Case&#45;&gt;table_port23 -->
+<!-- Case&#45;&gt;table_port3 -->
 <g id="edge1" class="edge">
-<title>Case:23&#45;&gt;table_port23</title>
+<title>Case:3&#45;&gt;table_port3</title>
 <path fill="none" stroke="black" d="M327,-189C409.75,-189 484.18,-114.93 520.89,-71.24"/>
 </g>
-<!-- table_port24 -->
+<!-- table_port4 -->
 <g id="node3" class="node">
-<title>table_port24</title>
+<title>table_port4</title>
 <polygon fill="lightblue" stroke="transparent" points="368,-60 368,-74 401,-74 401,-60 368,-60"/>
 <polygon fill="none" stroke="black" points="368,-60 368,-74 401,-74 401,-60 368,-60"/>
 <text text-anchor="start" x="371" y="-65.4" font-family="Arial" font-size="7.00">Attribute</text>
@@ -118,9 +118,9 @@
 <text text-anchor="start" x="404" y="-9.4" font-family="Arial" font-size="7.00">string</text>
 <polygon fill="none" stroke="black" points="425,-4 425,-18 454,-18 454,-4 425,-4"/>
 </g>
-<!-- Case&#45;&gt;table_port24 -->
+<!-- Case&#45;&gt;table_port4 -->
 <g id="edge2" class="edge">
-<title>Case:24&#45;&gt;table_port24</title>
+<title>Case:4&#45;&gt;table_port4</title>
 <path fill="none" stroke="black" d="M327,-161C367.92,-161 390.5,-113.73 401.68,-78.29"/>
 </g>
 <!-- Concept_Person -->

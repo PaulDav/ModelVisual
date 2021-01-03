@@ -10,6 +10,7 @@ class EntityModels:
         self.FileDataStructure = filepath_data_structures
         self.FileTerminology = filepath_terminology
         self.port_id = 0
+        self.conceptOfEntity = {}
         self.concepts = self.generate_concepts()
         self.conceptsOf = self.generate_concepts_of()
         self.entities = self.generate_entities()
@@ -83,9 +84,13 @@ class EntityModels:
                 if previous_row == {} or row["Entity"] != '':
                     previous_row = row
 
-                    entities[row["Entity"]] = {"Entity": row["Entity"], "Concept": row["Concept"],
+                    entities[row["Entity"]] = {"Entity": row["Entity"], "Concept": [],
                                                "Concept Description": row["Concept Description"],
                                                "Entity Description": row["Entity Description"], "Attributes": []}
+
+                    if row["Concept"]:
+                        entities[row["Entity"]]["Concept"].append(row["Concept"])
+                        self.conceptOfEntity[row["Concept"]] = row["Entity"]
 
                     if row["Attributes"]:
                         entities[row["Entity"]]["Attributes"].append(
@@ -94,13 +99,16 @@ class EntityModels:
                              "Occurs": row["Occurs"], "Required": row["Required"],
                              "Permitted Values": row["Permitted Values"]})
                 else:
+                    if row["Concept"]:
+                        entities[previous_row["Entity"]]["Concept"].append(row["Concept"])
+                        self.conceptOfEntity[row["Concept"]] = previous_row["Entity"]
+
                     if row["Attributes"]:
                         entities[previous_row["Entity"]]["Attributes"].append(
                             {"Attributes": row["Attributes"], "Description": row["Description"],
                              "Field Type": row["Field Type"], "Data Structure": row["Data Structure"],
                              "Occurs": row["Occurs"], "Required": row["Required"],
                              "Permitted Values": row["Permitted Values"]})
-
         return entities
 
     def generate_data_structures(self) -> dict:
@@ -146,19 +154,22 @@ class EntityModels:
                              f"<td align='left' balign='left' valign='top'{port}>{attr['Occurs']}</td></tr>"
             table += "</table>>"
             dot.node(item["Entity"], table, _attributes={"shape": "plaintext", "URL": f"#{item['Entity']}"})
-            if item["Concept"] != '':
-                for con in self.concepts[item["Concept"]]["Relationship"]:
-                    dot.node(f'Concept_{self.concepts[con["Object"]]["Label"]}', self.concepts[con["Object"]]["Label"],
-                             _attributes={"height": "0.8", "width": "1.0", "style": "filled", "fixedsize": "true",
-                                          "URL": f'#{strip_savvi(item["Concept"])}'})
-                    dot.edge(item["Entity"], f'Concept_{self.concepts[con["Object"]]["Label"]}', con["Relationship"])
+            for con_ in item["Concept"]:
+                if con_ != '':
+                    for con in self.concepts[con_]["Relationship"]:
+                        dot.node(f'Concept_{self.concepts[con["Object"]]["Label"]}',
+                                 self.concepts[con["Object"]]["Label"],
+                                 _attributes={"height": "0.8", "width": "1.0", "style": "filled", "fixedsize": "true",
+                                              "URL": f'#{strip_savvi(con_)}'})
+                        dot.edge(item["Entity"], f'Concept_{self.concepts[con["Object"]]["Label"]}',
+                                 con["Relationship"])
 
-            if item["Concept"] != '' and len(self.conceptsOf[item["Concept"]]):
-                for con in self.conceptsOf[item["Concept"]]:
-                    dot.node(f'ConceptOf_{con["Label"]}', con["Label"],
-                             _attributes={"height": "0.8", "width": "1.0", "style": "filled", "fixedsize": "true",
-                                          "URL": f'#{strip_savvi(item["Concept"])}'})
-                    dot.edge(f'ConceptOf_{con["Label"]}', item["Entity"], con["Relationship"])
+                if con_ != '' and len(self.conceptsOf[con_]):
+                    for con in self.conceptsOf[con_]:
+                        dot.node(f'ConceptOf_{con["Label"]}', con["Label"],
+                                 _attributes={"height": "0.8", "width": "1.0", "style": "filled", "fixedsize": "true",
+                                              "URL": f'#{strip_savvi(con_)}'})
+                        dot.edge(f'ConceptOf_{con["Label"]}', item["Entity"], con["Relationship"])
 
             print(dot.source)
             dot.format = "svg"

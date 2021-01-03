@@ -15,7 +15,7 @@ ContactPoint,"Details for all kinds of technology-mediated contact points for a 
 
 * phone
 * email
-* sms",lookup,,,https://www.hl7.org/fhir/datatypes-definitions.html#ContactPoint.system,http://hl7.org/fhir/ValueSet/contact-point-system,Should align this to ORUK
+* sms",lookup,,,https://www.hl7.org/fhir/datatypes-definitions.html#ContactPoint.system,hl7:contact-point-system,Should align this to ORUK
 ,,Value,,string,,,https://www.hl7.org/fhir/datatypes-definitions.html#ContactPoint.value,,
 ,,,,,,,,,
 ,,,,,,,,,

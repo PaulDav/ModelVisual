@@ -22,6 +22,7 @@ class CsvConvert:
         self.convert_entities()
         self.convert_data_structures()
         self.convert_entity_attributes()
+        self.convert_structure_attributes()
 
     def generate_concepts(self) -> dict:
         """
@@ -134,8 +135,12 @@ class CsvConvert:
                     if row["Attributes"]:
                         data[row["Structure"]] = {"Structure Description": row["Structure Description"],
                                                   "Attributes": [
-                                                      {"Attribute": row["Attributes"], "Source": row["Source"],
-                                                       "Type": row["Field Type"], "Occurs": row["Occurs"]}]}
+                                                      {"Attribute": row["Attributes"],
+                                                       "Description": row["Description"],
+                                                       "Field Type": row["Field Type"],
+                                                       "Occurs": row["Occurs"], "Required": row["Required"],
+                                                       "Source": row["Source"],
+                                                       "Permitted Values": row["Permitted Values"]}]}
                     else:
                         data[row["Structure"]] = {"Structure Description": row["Structure Description"],
                                                   "Source": row["Source"],
@@ -143,7 +148,9 @@ class CsvConvert:
                 else:
                     if row["Attributes"]:
                         data[previous_row["Structure"]]["Attributes"].append(
-                            {"Attribute": row["Attributes"], "Type": row["Field Type"], "Occurs": row["Occurs"]})
+                            {"Attribute": row["Attributes"], "Description": row["Description"],
+                             "Field Type": row["Field Type"], "Occurs": row["Occurs"], "Required": row["Required"],
+                             "Source": row["Source"], "Permitted Values": row["Permitted Values"]})
 
         return data
 
@@ -238,6 +245,22 @@ class CsvConvert:
                            "Field Type": attr["Field Type"],
                            "Structure": attr["Data Structure"],
                            "Occurs": attr["Occurs"], "Required?": attr["Required"], "Source": attr["Source"],
+                           "Permitted Values": "" if not self.terminology.get(attr["Permitted Values"]) else "\n".join(
+                               ("∙ " + s for s in self.terminology[attr["Permitted Values"]]))}
+                    csv_output.writerow(row)
+
+    def convert_structure_attributes(self):
+        headings = ["Attribute", "Description", "Field Type", "Occurs", "Required?", "Source", "Permitted Values"]
+
+        for key, item in self.structures.items():
+            with open(os.path.join(os.path.dirname(__file__), 'csv_output', 'Structure Attributes', f'{key}.csv'), "w",
+                      newline='', encoding="UTF-8") as file_output:
+                csv_output = csv.DictWriter(file_output, fieldnames=headings)
+                csv_output.writeheader()
+                for attr in item["Attributes"]:
+                    row = {"Attribute": attr["Attribute"], "Description": attr["Description"],
+                           "Field Type": attr["Field Type"], "Occurs": attr["Occurs"], "Required?": attr["Required"],
+                           "Source": attr["Source"],
                            "Permitted Values": "" if not self.terminology.get(attr["Permitted Values"]) else "\n".join(
                                ("∙ " + s for s in self.terminology[attr["Permitted Values"]]))}
                     csv_output.writerow(row)
