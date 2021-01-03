@@ -1,0 +1,6 @@
+Structure,Description,Source
+Address,The Address of a Property,https://www.hl7.org/fhir/datatypes.html#Address
+Characteristic,To indicate the presence of a feature of a thing.,
+ContactPoint,"Details for all kinds of technology-mediated contact points for a person or organization, including telephone, email, etc.",https://www.hl7.org/fhir/datatypes.html#ContactPoint
+Identifier,A reference from a scheme,https://www.hl7.org/fhir/datatypes.html#Identifier
+Position,"The absolute geographic location of the Location, expressed using the WGS84 datum",https://www.hl7.org/fhir/location-definitions.html#Location.position

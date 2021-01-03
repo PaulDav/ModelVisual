@@ -204,7 +204,7 @@ def strip_savvi(text):
 
 if __name__ == '__main__':
     EntireEntityModel(
-        os.path.join(os.path.dirname(__file__), 'csv/SAVVI Concept and Logical Model - Logical Model.csv'),
-        os.path.join(os.path.dirname(__file__), 'csv/SAVVI Concept and Logical Model - Concept Model.csv'),
-        os.path.join(os.path.dirname(__file__), 'csv/SAVVI Concept and Logical Model - Data Structures.csv'),
-        os.path.join(os.path.dirname(__file__), 'csv/SAVVI Concept and Logical Model - Terminology.csv'))
+        os.path.join(os.path.dirname(__file__), 'csv', 'SAVVI Concept and Logical Model - Logical Model.csv'),
+        os.path.join(os.path.dirname(__file__), 'csv', 'SAVVI Concept and Logical Model - Concept Model.csv'),
+        os.path.join(os.path.dirname(__file__), 'csv', 'SAVVI Concept and Logical Model - Data Structures.csv'),
+        os.path.join(os.path.dirname(__file__), 'csv', 'SAVVI Concept and Logical Model - Terminology.csv'))

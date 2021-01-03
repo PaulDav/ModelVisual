@@ -35,6 +35,8 @@ Case,savvi:Case,A container for information recording the history of events for 
 ,,,,,,,,,,,,
 ContactEvent,savvi:ContactEvent,A record of an event in which the situation of a person or household was sought.,,,,,,,,,,
 ,,,,Date,The Date that the contact took place,date,,,,,,
+,,,,ContactRole,"To indicate the role that is providing information about the Case. e.g. Vulnerable Person, Relative, Public, Professional, Community Group, Elected Representative",,Characteristic,,,,,
+,,,,ContactPerson,The name of the person providing information. ,string,,,,,,
 ,,,,ContactMethod,The method that was used to make the contact.,lookup,,,,,savvi:ContactMethods,
 ,,,,ContactDirection,"To indicate if the contact was initiated by the Subject or a support organisation.
 
@@ -95,7 +97,7 @@ Person,savvi:Person,"A Person who may be vulnerable, or who needs assistance.",D
 ,,,,Title,,string,,,,fhir:HumanName.prefix,,
 ,,,,FamilyName,,string,,,,fhir:HumanName.family,,
 ,,,,GivenNames,,string,,,,fhir:HumanName.given,,
-,,,,NickName,"may be a shortened or familiar form of the GivenName (e.g., Betty or Lizzie vs Elizabeth), by which the person is generally known by family & friends;",string,,many,,,,"Does this cover the surname too?
+,,,,Alias,"may be a shortened or familiar form of the GivenName (e.g., Betty or Lizzie vs Elizabeth), by which the person is generally known by family & friends;",string,,many,,,,"Does this cover the surname too?
 
 Do we also need Previous Names?"
 ,,,,BirthDate,At least an estimated year should be provided as a guess if the real DOB is unknown.,date,,,,fhir:Person.birthDate,,

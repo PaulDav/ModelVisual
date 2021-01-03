@@ -1,12 +1,12 @@
 Structure,Structure Description,Attributes,Description,Field Type,Occurs,Required,Source,Permitted Values,Issues
 ,,,,,,,,,
-Address,,,,,,,https://www.hl7.org/fhir/datatypes.html#Address,,
+Address,The Address of a Property,,,,,,https://www.hl7.org/fhir/datatypes.html#Address,,
 ,,Line,,string,many,,https://www.hl7.org/fhir/datatypes-definitions.html#Address.line,,"This is not structured as per BS7666 - as some data sources may not have the data in that format.  If a UPRN is provided, a structured address may be looked up by an organisation with the right licence."
 ,,Postcode,,string,,,https://www.hl7.org/fhir/datatypes-definitions.html#Address.postalCode,,
 ,,,,,,,,,
-Characteristic,,,,,,,,,
+Characteristic,To indicate the presence of a feature of a thing.,,,,,,,,
 ,,Scheme,"To define the scheme that that the characteristic is taken from. e.g. condition, ons.",string,,,,,
-,,Term,A term from the scheme repreenting a characteristic,string,,yes,,,
+,,Term,A term from the scheme representing a characteristic,string,,yes,,,
 ,,URI,A persistant identifier for the Term,string,,,,,
 ,,Value,"An optional value that quantifies the Term. e.g. if the term is 'number of bedrooms', the Value may be 3.  Many Tems will not need a value.",string,,,,,
 ,,,,,,,,,

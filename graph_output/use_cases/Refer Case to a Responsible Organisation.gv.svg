@@ -180,7 +180,7 @@
 <text text-anchor="start" x="59.5" y="-229.4" font-family="Arial" font-size="7.00">string</text>
 <polygon fill="none" stroke="black" points="90.5,-224 90.5,-238 119.5,-238 119.5,-224 90.5,-224"/>
 <polygon fill="none" stroke="black" points="8.5,-210 8.5,-224 56.5,-224 56.5,-210 8.5,-210"/>
-<text text-anchor="start" x="11.5" y="-215.4" font-family="Arial" font-size="7.00">NickName</text>
+<text text-anchor="start" x="11.5" y="-215.4" font-family="Arial" font-size="7.00">Alias</text>
 <polygon fill="none" stroke="black" points="56.5,-210 56.5,-224 90.5,-224 90.5,-210 56.5,-210"/>
 <text text-anchor="start" x="59.5" y="-215.4" font-family="Arial" font-size="7.00">string</text>
 <polygon fill="none" stroke="black" points="90.5,-210 90.5,-224 119.5,-224 119.5,-210 90.5,-210"/>

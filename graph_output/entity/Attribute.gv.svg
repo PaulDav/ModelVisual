@@ -8,9 +8,9 @@
  viewBox="0.00 0.00 380.00 324.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 320)">
 <polygon fill="white" stroke="transparent" points="-4,4 -4,-320 376,-320 376,4 -4,4"/>
-<!-- table_port2 -->
+<!-- table_port22 -->
 <g id="node1" class="node">
-<title>table_port2</title>
+<title>table_port22</title>
 <polygon fill="lightblue" stroke="transparent" points="278,-60 278,-74 311,-74 311,-60 278,-60"/>
 <polygon fill="none" stroke="black" points="278,-60 278,-74 311,-74 311,-60 278,-60"/>
 <text text-anchor="start" x="281" y="-65.4" font-family="Arial" font-size="7.00">Attribute</text>
@@ -80,9 +80,9 @@
 </a>
 </g>
 </g>
-<!-- Attribute&#45;&gt;table_port2 -->
+<!-- Attribute&#45;&gt;table_port22 -->
 <g id="edge1" class="edge">
-<title>Attribute:2&#45;&gt;table_port2</title>
+<title>Attribute:22&#45;&gt;table_port22</title>
 <path fill="none" stroke="black" d="M237,-161C277.92,-161 300.5,-113.73 311.68,-78.29"/>
 </g>
 <!-- Concept_Person -->

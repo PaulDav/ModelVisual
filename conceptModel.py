@@ -76,4 +76,4 @@ def strip_savvi(text):
 
 
 if __name__ == '__main__':
-    ConceptModel(os.path.join(os.path.dirname(__file__), 'csv/SAVVI Concept and Logical Model - Concept Model.csv'))
+    ConceptModel(os.path.join(os.path.dirname(__file__), 'csv', 'SAVVI Concept and Logical Model - Concept Model.csv'))

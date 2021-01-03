@@ -4,7 +4,7 @@ savvi:Area,Area,A geographic area,sccm:Place
 savvi:Attribute,Attribute,A state of a person or household.,sccm:State
 savvi:Case,Case,A container for information recording the history of events for a person or household who may have needs.,cssm:Case
 savvi:ContactEvent,Contact Event,A record of an event in which the situation of a person or household was sought.,sccm:Observation
-savvi:DeliveryOrganisation,Delivery Organisation,a service provider who delivers actions that respond to a NEED.,sccm:Organisation
+savvi:DeliveryOrganisation,Delivery Organisation,A service provider who delivers actions that respond to a NEED.,sccm:Organisation
 savvi:Household,Household,A collection of PERSONs who live together.,sccm:Organisation
 savvi:LeadOrganisation,Lead Organisation,An organisation responsible for coordinating a vulnerability initiative.,sccm:Organization
 savvi:Need,Need,The need where assistance is required to mitigate a vulnerability.,sccm:Objective

@@ -8,9 +8,9 @@
  viewBox="0.00 0.00 380.00 296.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 292)">
 <polygon fill="white" stroke="transparent" points="-4,4 -4,-292 376,-292 376,4 -4,4"/>
-<!-- table_port18 -->
+<!-- table_port39 -->
 <g id="node1" class="node">
-<title>table_port18</title>
+<title>table_port39</title>
 <polygon fill="lightblue" stroke="transparent" points="278,-60 278,-74 311,-74 311,-60 278,-60"/>
 <polygon fill="none" stroke="black" points="278,-60 278,-74 311,-74 311,-60 278,-60"/>
 <text text-anchor="start" x="281" y="-65.4" font-family="Arial" font-size="7.00">Attribute</text>
@@ -70,9 +70,9 @@
 </a>
 </g>
 </g>
-<!-- RiskAssessment&#45;&gt;table_port18 -->
+<!-- RiskAssessment&#45;&gt;table_port39 -->
 <g id="edge1" class="edge">
-<title>RiskAssessment:18&#45;&gt;table_port18</title>
+<title>RiskAssessment:39&#45;&gt;table_port39</title>
 <path fill="none" stroke="black" d="M230,-133C262.42,-133 287.08,-103.78 302.5,-78.09"/>
 </g>
 <!-- Concept_Lead\nOrganisation -->

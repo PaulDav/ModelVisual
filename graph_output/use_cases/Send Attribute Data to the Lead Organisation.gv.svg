@@ -117,7 +117,7 @@
 <text text-anchor="start" x="222.5" y="-65.4" font-family="Arial" font-size="7.00">string</text>
 <polygon fill="none" stroke="black" points="253.5,-60 253.5,-74 282.5,-74 282.5,-60 253.5,-60"/>
 <polygon fill="none" stroke="black" points="171.5,-46 171.5,-60 219.5,-60 219.5,-46 171.5,-46"/>
-<text text-anchor="start" x="174.5" y="-51.4" font-family="Arial" font-size="7.00">NickName</text>
+<text text-anchor="start" x="174.5" y="-51.4" font-family="Arial" font-size="7.00">Alias</text>
 <polygon fill="none" stroke="black" points="219.5,-46 219.5,-60 253.5,-60 253.5,-46 219.5,-46"/>
 <text text-anchor="start" x="222.5" y="-51.4" font-family="Arial" font-size="7.00">string</text>
 <polygon fill="none" stroke="black" points="253.5,-46 253.5,-60 282.5,-60 282.5,-46 253.5,-46"/>
