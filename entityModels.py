@@ -15,8 +15,8 @@ class EntityModels:
         self.entities = self.generate_entities()
         self.structures = self.generate_data_structures()
         # self.terminology = self.generate_terminology()
-        self.generate_dot_code("png")
-        self.generate_dot_code("svg")
+        self.generate_dot_code()
+        self.generate_dot_code()
 
     def generate_concepts(self) -> dict:
         """
@@ -125,7 +125,7 @@ class EntityModels:
 
         return data
 
-    def generate_dot_code(self, file_format):
+    def generate_dot_code(self):
         for key, item in self.entities.items():
             dot = setup_digraph()
 
@@ -141,7 +141,8 @@ class EntityModels:
                     else:
                         port = ""
                     table += f"<tr><td align='left' balign='left' valign='top'>{attr['Attributes']}</td>" \
-                             f"<td align='left' balign='left' valign='top'>{attr['Field Type'] if attr['Field Type'] else attr['Data Structure']}</td>" \
+                             f"<td align='left' balign='left' valign='top'>" \
+                             f"{attr['Field Type'] if attr['Field Type'] else attr['Data Structure']}</td>" \
                              f"<td align='left' balign='left' valign='top'{port}>{attr['Occurs']}</td></tr>"
             table += "</table>>"
             dot.node(item["Entity"], table, _attributes={"shape": "plaintext", "URL": f"#{item['Entity']}"})
@@ -201,5 +202,6 @@ def strip_savvi(text):
 if __name__ == '__main__':
     EntityModels(os.path.join(os.path.dirname(__file__), 'csv', 'SAVVI Concept and Logical Model - Logical Model.csv'),
                  os.path.join(os.path.dirname(__file__), 'csv', 'SAVVI Concept and Logical Model - Concept Model.csv'),
-                 os.path.join(os.path.dirname(__file__), 'csv', 'SAVVI Concept and Logical Model - Data Structures.csv'),
+                 os.path.join(os.path.dirname(__file__), 'csv',
+                              'SAVVI Concept and Logical Model - Data Structures.csv'),
                  os.path.join(os.path.dirname(__file__), 'csv', 'SAVVI Concept and Logical Model - Terminology.csv'))

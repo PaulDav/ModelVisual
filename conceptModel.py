@@ -15,7 +15,6 @@ class ConceptModel:
         self.fileConceptModel = file_concept_model
         self.concepts = self.generate_concepts()
         dot = self.generate_dot_code()
-        dot = self.generate_dot_code()
 
         print(dot.source)
         dot.format = "svg"

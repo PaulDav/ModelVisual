@@ -156,7 +156,7 @@ class EntireEntityModel:
 
             dot.node(item["Entity"], table, _attributes={"shape": "plaintext", "URL": f"#{item['Entity']}"})
             entities.append(item["Entity"])
-        nodeConcept = []
+        node_concept = []
         for entity in entities:
             for concept in self.entities[entity]["Concept"]:
                 if self.concepts.get(concept, False) and self.concepts[concept]["Relationship"]:
@@ -164,7 +164,7 @@ class EntireEntityModel:
                         if rel["Object"] in self.conceptOfEntity:
                             dot.edge(entity, self.conceptOfEntity[rel["Object"]], rel["Relationship"])
                         else:
-                            if rel["Object"] in nodeConcept:
+                            if rel["Object"] in node_concept:
                                 dot.edge(entity, f'node{strip_savvi(rel["Object"])}', rel["Relationship"])
                             else:
                                 dot.node(f'node{strip_savvi(rel["Object"])}', self.concepts[rel["Object"]]["Label"],
@@ -178,7 +178,7 @@ class EntireEntityModel:
                                              self.conceptOfEntity[con["Object"]],
                                              con["Relationship"])
 
-                                nodeConcept.append(rel["Object"])
+                                node_concept.append(rel["Object"])
 
         print(dot.source)
         dot.format = "png"
