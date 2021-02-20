@@ -1,0 +1,12 @@
+Attribute,Description,Field Type,Structure,Occurs,Required?,Source,Permitted Values
+Reference,A unique reference for the case.,,Identifier,,,fhir:EpisodeOfCare.identifier,
+Status,"one off
+
+* planned
+* active
+* onhold
+* finished
+* cancelled",lookup,,,,fhir:EpisodeOfCare.status,
+RiskCategory,A Risk Category if the Case was raised as a result of a Risk Assessment,,Characteristic,,,,
+DateRaised,The Date that the Case was started,date,,,,fhir:Period.start,
+DateClosed,The Date that the Case was closed.,date,,,,fhir:Period.end,

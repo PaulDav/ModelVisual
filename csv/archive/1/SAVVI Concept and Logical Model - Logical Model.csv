@@ -1,0 +1,144 @@
+Entity,Concept,Concept Description,Entity Description,Attributes,Description,Field Type,Data Structure,Occurs,Required,Source,Permitted Values,Issues
+Action,savvi:Action,An action that has been carried out as a part of responding to a NEED.,,Type,"The type of action - e.g.
+* food parcel
+* debt advice",,Characteristic,,,,,
+,,,,Date,The date of the Action,date,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+Attribute,savvi:Attribute,A state of a person or household.,,Type,"The type of Attribute - one of
+* Circumstance
+* Event
+* Risk
+* Service
+",lookup,,,,,savvi:AttributeTypes,
+,,,,Characteristic,"To describe the Attribute. e.g. In receipt of Universal Credit, Living Alone.",,Characteristic,,,,,
+,,,,Date,The date from which the attribute is true,date,,,,,,
+,,,,EndDate,The date from which the attribute ended or is expected to end.,date,,,,,,
+,,,,,,,,,,,,
+Case,savvi:Case,A container for information recording the history of events for a person or household who may have needs.,A Case to coordinate the respose to a person or household.,,,,,,,fhir:EpisodeOfCare,,
+,,,,Reference,A unique reference for the case.,,Identifier,,,fhir:EpisodeOfCare.identifier,,
+,,,,Status,"one off
+
+* planned
+* active
+* onhold
+* finished
+* cancelled",lookup,,,,fhir:EpisodeOfCare.status,,
+,,,,RiskCategory,A Risk Category if the Case was raised as a result of a Risk Assessment,,Characteristic,,,,,
+,,,,DateRaised,The Date that the Case was started,date,,,,fhir:Period.start,,
+,,,,DateClosed,The Date that the Case was closed.,date,,,,fhir:Period.end,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+ContactEvent,savvi:ContactEvent,A record of an event in which the situation of a person or household was sought.,,,,,,,,,,
+,,,,Date,The Date that the contact took place,date,,,,,,
+,,,,ContactRole,"To indicate the role that is providing information about the Case. e.g. Vulnerable Person, Relative, Public, Professional, Community Group, Elected Representative",,Characteristic,,,,,
+,,,,ContactPerson,The name of the person providing information. ,string,,,,,,
+,,,,ContactMethod,The method that was used to make the contact.,lookup,,,,,savvi:ContactMethods,
+,,,,ContactDirection,"To indicate if the contact was initiated by the Subject or a support organisation.
+
+One-off
+* Outbound
+* Inbound",lookup,,,,,savvi:ContactDirections,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+Household,savvi:Household,A collection of PERSONs who live together.,The household unit at a Residence,Characteristic,"May provide useful information such a
+* OAP household
+* has children
+",,Characteristic,many,,,,
+,,,,Identifier,,,Identifier,many,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+Need,savvi:Need,The need where assistance is required to mitigate a vulnerability.,,Type,"The type of need - such as
+* access to shopping
+* access to medicine
+* financial stability
+* remaining in the current accommodation
+",,Characteristic,once,yes,fhir:EpisodeOfCare.diagnosis.condition ,,
+,,,,Rationale,The reasoning for the need.,text,,,,,,
+,,,,Date,The date that the need is established,date,,,,,,
+,,,,EndDate,The date that the need was resolved,date,,,,,,
+,,,,Target Date,The date that the need should be resolved by for it to be effective.,date,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+Organisation,savvi:LeadOrganisation,,"Includes local authority, company, institution, government agency, community group etc.",,,,,,,fhir:Organization,,Organisations are also defined in OpenReferral UK
+,savvi:ResponsibleOrganisation,,,Identifier,"A references by which the organisation is known. e.g.
+
+* GDS Register of Local Authorities
+* Companies House Number
+* Charity Number",,Identifier,many,,fhir:Organization.identifier ,,The Identifier could point to an API from an ORUK Instance.
+,savvi:DeliveryOrganisation,,,Type,"To indicate the type of Organisation.  One of
+
+* Local Authority
+* Government Department
+* Community or Voluntary Group
+* Private Sector
+* Other
+",lookup,,,,fhir:Organization.type,savvi:OrganisationTypes,"Can we improve this list, or use an ESD list?"
+,savvi:SourceOrganisation,,,Name,,string,,,yes,fhir:Organization.name,,
+,,,,Department,a part of the organisation,string,,,,fhir:Organization.name,,
+,,,,ContactPerson,,string,,,,,,
+,,,,ContactPoint,,,ContactPoint,many,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+Outcome,savvi:Outcome,"The resulting situation of a CASE, or a NEED",,Category,"A Categorisation of the Outcome, such as
+* now supported by family or friends
+* lock-down over
+* sustainable tenancy",,Characteristic,,,,,
+,,,,Description,,text,,,,,,
+,,,,Date,the date that the Outcome was acheived,date,,,,,,
+,,,,,,,,,,,,
+Person,savvi:Person,"A Person who may be vulnerable, or who needs assistance.",Designed to support data matching.,,,,,,,fhir:Person,,
+,,,,Title,,string,,,,fhir:HumanName.prefix,,
+,,,,FamilyName,,string,,,,fhir:HumanName.family,,
+,,,,GivenNames,,string,,,,fhir:HumanName.given,,
+,,,,Alias,"may be a shortened or familiar form of the GivenName (e.g., Betty or Lizzie vs Elizabeth), by which the person is generally known by family & friends;",string,,many,,,,"Does this cover the surname too?
+
+Do we also need Previous Names?"
+,,,,BirthDate,At least an estimated year should be provided as a guess if the real DOB is unknown.,date,,,,fhir:Person.birthDate,,
+,,,,Gender,,lookup,,,,fhir:Person.gender,http://hl7.org/fhir/ValueSet/administrative-gender,
+,,,,Identifier,"References by which people are known in various schemes.  e.g. NiNo, Health Number, a local reference.",,Identifier,many,,,,
+,,,,,,,,,,,,
+Plan,savvi:Plan,A set of planned actions designed to respond to a NEED over a period.,,,,,,,,,,
+,,,,Description,Description of the Plan,text,,,,,,
+,,,,ActivityType,"Categories of the types of activity that the plan includes - such as
+* food parcel
+* debt advice",,Characteristic,many,,,,
+,,,,Status,"one off
+
+* planned
+* active
+* onhold
+* finished
+* cancelled",lookup,,,,,,
+,,,,StartDate,,date,,,,,,
+,,,,EndDate,,date,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+Residence,savvi:Residence,"A building, or a part of a building, designed to accommodate a single HOUSEHOLD.",,Address,,,Address,,,,,
+,,,,Characteristic,"Information about the residence such as the number or bedrooms, condition.",,Characteristic,many,,,,
+,,,,Identifier,"Properties are known by references such as the UPRN from GeoPlace.
+A property reference can be pseudonimised so that it can be matched with others, without knowing the actual address.",,Identifier,many,,,,
+,,,,Position,The coordinates of a map pin,,Position,,,,,
+,,,,Area,"To indicate a geographic area that a property is contained in.  Schemes might include
+* Statistical Geographies such as LSOA
+* Administrative Geographies such as Local Authority jurisdictions
+* USRN ( Unique Street Reference Number )
+",,Identifier,many,,,,
+,,,,,,,,,,,,
+RiskAssessment,savvi:RiskAssessment,A Categorisation of the Risk of a PERSON or HOUSEHOLD.,,,,,,,,,,
+,,,,Date,The Date that the Risk Category was established,date,,,,,,
+,,,,Category,A category to match the Risk Stratification Policy,,Characteristic,,yes,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+SituationAssessment,savvi:SituationAssessment,An understanding of the situation of a PERSON or HOUSEHOLD as a result of a contact.,,,,,,,,,,
+,,,,Date,The date that the situation was assessed,date,,,,,,
+,,,,Situation,A synopsis of the situation,text,,,,,,
+,,,,Assessment,A synopsis of the required response,text,,,,,,
+,,,,RiskCategory,The assessed Risk Category,,Characteristic,,,,,

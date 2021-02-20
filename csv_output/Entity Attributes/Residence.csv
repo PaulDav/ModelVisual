@@ -1,0 +1,11 @@
+Attribute,Description,Field Type,Structure,Occurs,Required?,Source,Permitted Values
+Address,,,Address,,,,
+Characteristic,"Information about the residence such as the number or bedrooms, condition.",,Characteristic,many,,,
+Identifier,"Properties are known by references such as the UPRN from GeoPlace.
+A property reference can be pseudonimised so that it can be matched with others, without knowing the actual address.",,Identifier,many,,,
+Position,The coordinates of a map pin,,Position,,,,
+Area,"To indicate a geographic area that a property is contained in.  Schemes might include
+* Statistical Geographies such as LSOA
+* Administrative Geographies such as Local Authority jurisdictions
+* USRN ( Unique Street Reference Number )
+",,Identifier,many,,,

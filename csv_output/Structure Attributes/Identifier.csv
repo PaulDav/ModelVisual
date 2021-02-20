@@ -1,0 +1,4 @@
+Attribute,Description,Field Type,Occurs,Required?,Source,Permitted Values
+Scheme,"To define the scheme that that the value is taken from. e.g. nino, nlpg.",string,,,https://www.hl7.org/fhir/datatypes-definitions.html#Identifier.system,
+Reference,,string,,,https://www.hl7.org/fhir/datatypes-definitions.html#Identifier.value,
+Pseudonimised,To indicate if the Reference has been pseudonimised.,boolean,,,,

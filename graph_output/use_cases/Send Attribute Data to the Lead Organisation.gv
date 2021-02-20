@@ -11,8 +11,8 @@ digraph {
 	Attribute -> Household [label=about]
 	nodeProvenance [label=Provenance URL="#Provenance" fixedsize=true height=0.8 style=filled width=1.0]
 	Attribute -> nodeProvenance [label=has]
-	nodeProvenance -> Organisation [label="asserted by"]
 	Household -> Residence [label="resides at"]
 	Household -> Person [label=contains]
 	Organisation -> Attribute [label=receives]
+	Organisation -> Attribute [label=provides]
 }

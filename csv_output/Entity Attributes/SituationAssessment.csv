@@ -1,0 +1,5 @@
+Attribute,Description,Field Type,Structure,Occurs,Required?,Source,Permitted Values
+Date,The date that the situation was assessed,date,,,,,
+Situation,A synopsis of the situation,text,,,,,
+Assessment,A synopsis of the required response,text,,,,,
+RiskCategory,The assessed Risk Category,,Characteristic,,,,

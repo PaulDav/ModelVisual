@@ -47,7 +47,7 @@
 <g id="a_node2"><a xlink:href="#Attribute" xlink:title="&lt;TABLE&gt;">
 <polygon fill="lightblue" stroke="transparent" points="107,-196 107,-210 236,-210 236,-196 107,-196"/>
 <polygon fill="none" stroke="black" points="107,-196 107,-210 236,-210 236,-196 107,-196"/>
-<text text-anchor="start" x="157" y="-201.4" font-family="Arial" font-size="7.00"> Attribute</text>
+<text text-anchor="start" x="157.5" y="-201.4" font-family="Arial" font-size="7.00"> Attribute</text>
 <polygon fill="lightblue" stroke="transparent" points="107,-182 107,-196 157,-196 157,-182 107,-182"/>
 <polygon fill="none" stroke="black" points="107,-182 107,-196 157,-196 157,-182 107,-182"/>
 <text text-anchor="start" x="118.5" y="-187.4" font-family="Arial" font-size="7.00">Attribute</text>
@@ -137,35 +137,52 @@
 <g id="node6" class="node">
 <title>ConceptOf_Lead\nOrganisation</title>
 <g id="a_node6"><a xlink:href="#Attribute" xlink:title="Lead\nOrganisation">
-<ellipse fill="lightblue" stroke="black" cx="126" cy="-287" rx="36" ry="29"/>
-<text text-anchor="middle" x="126" y="-289.4" font-family="Arial" font-size="7.00">Lead</text>
-<text text-anchor="middle" x="126" y="-281.4" font-family="Arial" font-size="7.00">Organisation</text>
+<ellipse fill="lightblue" stroke="black" cx="81" cy="-287" rx="36" ry="29"/>
+<text text-anchor="middle" x="81" y="-289.4" font-family="Arial" font-size="7.00">Lead</text>
+<text text-anchor="middle" x="81" y="-281.4" font-family="Arial" font-size="7.00">Organisation</text>
 </a>
 </g>
 </g>
 <!-- ConceptOf_Lead\nOrganisation&#45;&gt;Attribute -->
 <g id="edge5" class="edge">
 <title>ConceptOf_Lead\nOrganisation&#45;&gt;Attribute</title>
-<path fill="none" stroke="black" d="M136.32,-259.16C140.42,-248.51 145.28,-235.87 150.05,-223.46"/>
-<polygon fill="black" stroke="black" points="153.34,-224.65 153.67,-214.06 146.81,-222.14 153.34,-224.65"/>
-<text text-anchor="middle" x="160" y="-234.4" font-family="Arial" font-size="7.00">receives</text>
+<path fill="none" stroke="black" d="M99.43,-262.04C108.29,-250.53 119.28,-236.23 129.97,-222.33"/>
+<polygon fill="black" stroke="black" points="132.89,-224.28 136.22,-214.22 127.35,-220.01 132.89,-224.28"/>
+<text text-anchor="middle" x="134.5" y="-234.4" font-family="Arial" font-size="7.00">receives</text>
 </g>
 <!-- ConceptOf_Risk\nAssessment -->
 <g id="node7" class="node">
 <title>ConceptOf_Risk\nAssessment</title>
 <g id="a_node7"><a xlink:href="#Attribute" xlink:title="Risk\nAssessment">
-<ellipse fill="lightblue" stroke="black" cx="216" cy="-287" rx="36" ry="29"/>
-<text text-anchor="middle" x="216" y="-289.4" font-family="Arial" font-size="7.00">Risk</text>
-<text text-anchor="middle" x="216" y="-281.4" font-family="Arial" font-size="7.00">Assessment</text>
+<ellipse fill="lightblue" stroke="black" cx="171" cy="-287" rx="36" ry="29"/>
+<text text-anchor="middle" x="171" y="-289.4" font-family="Arial" font-size="7.00">Risk</text>
+<text text-anchor="middle" x="171" y="-281.4" font-family="Arial" font-size="7.00">Assessment</text>
 </a>
 </g>
 </g>
 <!-- ConceptOf_Risk\nAssessment&#45;&gt;Attribute -->
 <g id="edge6" class="edge">
 <title>ConceptOf_Risk\nAssessment&#45;&gt;Attribute</title>
-<path fill="none" stroke="black" d="M205.68,-259.16C201.58,-248.51 196.72,-235.87 191.95,-223.46"/>
-<polygon fill="black" stroke="black" points="195.19,-222.14 188.33,-214.06 188.66,-224.65 195.19,-222.14"/>
-<text text-anchor="middle" x="205" y="-234.4" font-family="Arial" font-size="7.00">uses</text>
+<path fill="none" stroke="black" d="M171,-257.98C171,-247.83 171,-235.99 171,-224.32"/>
+<polygon fill="black" stroke="black" points="174.5,-224.16 171,-214.16 167.5,-224.16 174.5,-224.16"/>
+<text text-anchor="middle" x="179" y="-234.4" font-family="Arial" font-size="7.00">uses</text>
+</g>
+<!-- ConceptOf_Source\nOrganisation -->
+<g id="node8" class="node">
+<title>ConceptOf_Source\nOrganisation</title>
+<g id="a_node8"><a xlink:href="#Attribute" xlink:title="Source\nOrganisation">
+<ellipse fill="lightblue" stroke="black" cx="261" cy="-287" rx="36" ry="29"/>
+<text text-anchor="middle" x="261" y="-289.4" font-family="Arial" font-size="7.00">Source</text>
+<text text-anchor="middle" x="261" y="-281.4" font-family="Arial" font-size="7.00">Organisation</text>
+</a>
+</g>
+</g>
+<!-- ConceptOf_Source\nOrganisation&#45;&gt;Attribute -->
+<g id="edge7" class="edge">
+<title>ConceptOf_Source\nOrganisation&#45;&gt;Attribute</title>
+<path fill="none" stroke="black" d="M242.57,-262.04C233.71,-250.53 222.72,-236.23 212.03,-222.33"/>
+<polygon fill="black" stroke="black" points="214.65,-220.01 205.78,-214.22 209.11,-224.28 214.65,-220.01"/>
+<text text-anchor="middle" x="237.5" y="-234.4" font-family="Arial" font-size="7.00">provides</text>
 </g>
 </g>
 </svg>

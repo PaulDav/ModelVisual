@@ -1,0 +1,6 @@
+Attribute,Description,Field Type,Structure,Occurs,Required?,Source,Permitted Values
+Characteristic,"May provide useful information such a
+* OAP household
+* has children
+",,Characteristic,many,,,
+Identifier,,,Identifier,many,,,

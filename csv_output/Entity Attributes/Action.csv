@@ -1,0 +1,5 @@
+Attribute,Description,Field Type,Structure,Occurs,Required?,Source,Permitted Values
+Type,"The type of action - e.g.
+* food parcel
+* debt advice",,Characteristic,,,,
+Date,The date of the Action,date,,,,,

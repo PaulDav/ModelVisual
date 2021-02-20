@@ -1,0 +1,12 @@
+Attribute,Description,Field Type,Structure,Occurs,Required?,Source,Permitted Values
+Description,Description of the Plan,text,,,,,
+ActivityType,"Categories of the types of activity that the plan includes - such as
+* food parcel
+* debt advice",,Characteristic,many,,,
+Status,,lookup,,,,,"∙ planned
+∙ active
+∙ onhold
+∙ finished
+∙ cancelled"
+StartDate,,date,,,,,
+EndDate,,date,,,,,

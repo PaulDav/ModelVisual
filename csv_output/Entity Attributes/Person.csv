@@ -1,0 +1,11 @@
+Attribute,Description,Field Type,Structure,Occurs,Required?,Source,Permitted Values
+Title,,string,,,,fhir:HumanName.prefix,
+FamilyName,,string,,,,fhir:HumanName.family,
+GivenNames,,string,,,,fhir:HumanName.given,
+Alias,"may be a shortened or familiar form of the GivenName (e.g., Betty or Lizzie vs Elizabeth), by which the person is generally known by family & friends;",string,,many,,,
+BirthDate,At least an estimated year should be provided as a guess if the real DOB is unknown.,date,,,,fhir:Person.birthDate,
+Gender,,lookup,,,,fhir:Person.gender,"∙ male
+∙ female
+∙ other
+∙ unknown"
+Identifier,"References by which people are known in various schemes.  e.g. NiNo, Health Number, a local reference.",,Identifier,many,,,

@@ -1,0 +1,5 @@
+Attribute,Description,Field Type,Occurs,Required?,Source,Permitted Values
+Scheme,"To define the scheme that that the characteristic is taken from. e.g. condition, ons.",string,,,,
+Term,A term from the scheme representing a characteristic,string,,yes,,
+URI,A persistant identifier for the Term,string,,,,
+Value,"An optional value that quantifies the Term. e.g. if the term is 'number of bedrooms', the Value may be 3.  Many Tems will not need a value.",string,,,,

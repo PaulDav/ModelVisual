@@ -8,9 +8,9 @@
  viewBox="0.00 0.00 290.00 222.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 218)">
 <polygon fill="white" stroke="transparent" points="-4,4 -4,-218 286,-218 286,4 -4,4"/>
-<!-- table_port20 -->
+<!-- table_port40 -->
 <g id="node1" class="node">
-<title>table_port20</title>
+<title>table_port40</title>
 <polygon fill="lightblue" stroke="transparent" points="188,-60 188,-74 221,-74 221,-60 188,-60"/>
 <polygon fill="none" stroke="black" points="188,-60 188,-74 221,-74 221,-60 188,-60"/>
 <text text-anchor="start" x="191" y="-65.4" font-family="Arial" font-size="7.00">Attribute</text>
@@ -45,45 +45,45 @@
 <g id="node2" class="node">
 <title>SituationAssessment</title>
 <g id="a_node2"><a xlink:href="#SituationAssessment" xlink:title="&lt;TABLE&gt;">
-<polygon fill="lightblue" stroke="transparent" points="62,-196 62,-210 191,-210 191,-196 62,-196"/>
-<polygon fill="none" stroke="black" points="62,-196 62,-210 191,-210 191,-196 62,-196"/>
-<text text-anchor="start" x="92" y="-201.4" font-family="Arial" font-size="7.00"> SituationAssessment</text>
-<polygon fill="lightblue" stroke="transparent" points="62,-182 62,-196 112,-196 112,-182 62,-182"/>
-<polygon fill="none" stroke="black" points="62,-182 62,-196 112,-196 112,-182 62,-182"/>
-<text text-anchor="start" x="73.5" y="-187.4" font-family="Arial" font-size="7.00">Attribute</text>
-<polygon fill="lightblue" stroke="transparent" points="112,-182 112,-196 162,-196 162,-182 112,-182"/>
-<polygon fill="none" stroke="black" points="112,-182 112,-196 162,-196 162,-182 112,-182"/>
-<text text-anchor="start" x="129" y="-187.4" font-family="Arial" font-size="7.00">Field</text>
-<polygon fill="lightblue" stroke="transparent" points="162,-182 162,-196 191,-196 191,-182 162,-182"/>
-<polygon fill="none" stroke="black" points="162,-182 162,-196 191,-196 191,-182 162,-182"/>
-<text text-anchor="start" x="165" y="-187.4" font-family="Arial" font-size="7.00">Occurs</text>
-<polygon fill="none" stroke="black" points="62,-168 62,-182 112,-182 112,-168 62,-168"/>
+<polygon fill="lightblue" stroke="transparent" points="62,-196 62,-210 190,-210 190,-196 62,-196"/>
+<polygon fill="none" stroke="black" points="62,-196 62,-210 190,-210 190,-196 62,-196"/>
+<text text-anchor="start" x="91.5" y="-201.4" font-family="Arial" font-size="7.00"> SituationAssessment</text>
+<polygon fill="lightblue" stroke="transparent" points="62,-182 62,-196 111,-196 111,-182 62,-182"/>
+<polygon fill="none" stroke="black" points="62,-182 62,-196 111,-196 111,-182 62,-182"/>
+<text text-anchor="start" x="73" y="-187.4" font-family="Arial" font-size="7.00">Attribute</text>
+<polygon fill="lightblue" stroke="transparent" points="111,-182 111,-196 161,-196 161,-182 111,-182"/>
+<polygon fill="none" stroke="black" points="111,-182 111,-196 161,-196 161,-182 111,-182"/>
+<text text-anchor="start" x="128" y="-187.4" font-family="Arial" font-size="7.00">Field</text>
+<polygon fill="lightblue" stroke="transparent" points="161,-182 161,-196 190,-196 190,-182 161,-182"/>
+<polygon fill="none" stroke="black" points="161,-182 161,-196 190,-196 190,-182 161,-182"/>
+<text text-anchor="start" x="164" y="-187.4" font-family="Arial" font-size="7.00">Occurs</text>
+<polygon fill="none" stroke="black" points="62,-168 62,-182 111,-182 111,-168 62,-168"/>
 <text text-anchor="start" x="65" y="-173.4" font-family="Arial" font-size="7.00">Date</text>
-<polygon fill="none" stroke="black" points="112,-168 112,-182 162,-182 162,-168 112,-168"/>
-<text text-anchor="start" x="115" y="-173.4" font-family="Arial" font-size="7.00">date</text>
-<polygon fill="none" stroke="black" points="162,-168 162,-182 191,-182 191,-168 162,-168"/>
-<polygon fill="none" stroke="black" points="62,-154 62,-168 112,-168 112,-154 62,-154"/>
+<polygon fill="none" stroke="black" points="111,-168 111,-182 161,-182 161,-168 111,-168"/>
+<text text-anchor="start" x="114" y="-173.4" font-family="Arial" font-size="7.00">date</text>
+<polygon fill="none" stroke="black" points="161,-168 161,-182 190,-182 190,-168 161,-168"/>
+<polygon fill="none" stroke="black" points="62,-154 62,-168 111,-168 111,-154 62,-154"/>
 <text text-anchor="start" x="65" y="-159.4" font-family="Arial" font-size="7.00">Situation</text>
-<polygon fill="none" stroke="black" points="112,-154 112,-168 162,-168 162,-154 112,-154"/>
-<text text-anchor="start" x="115" y="-159.4" font-family="Arial" font-size="7.00">text</text>
-<polygon fill="none" stroke="black" points="162,-154 162,-168 191,-168 191,-154 162,-154"/>
-<polygon fill="none" stroke="black" points="62,-140 62,-154 112,-154 112,-140 62,-140"/>
+<polygon fill="none" stroke="black" points="111,-154 111,-168 161,-168 161,-154 111,-154"/>
+<text text-anchor="start" x="114" y="-159.4" font-family="Arial" font-size="7.00">text</text>
+<polygon fill="none" stroke="black" points="161,-154 161,-168 190,-168 190,-154 161,-154"/>
+<polygon fill="none" stroke="black" points="62,-140 62,-154 111,-154 111,-140 62,-140"/>
 <text text-anchor="start" x="65" y="-145.4" font-family="Arial" font-size="7.00">Assessment</text>
-<polygon fill="none" stroke="black" points="112,-140 112,-154 162,-154 162,-140 112,-140"/>
-<text text-anchor="start" x="115" y="-145.4" font-family="Arial" font-size="7.00">text</text>
-<polygon fill="none" stroke="black" points="162,-140 162,-154 191,-154 191,-140 162,-140"/>
-<polygon fill="none" stroke="black" points="62,-126 62,-140 112,-140 112,-126 62,-126"/>
+<polygon fill="none" stroke="black" points="111,-140 111,-154 161,-154 161,-140 111,-140"/>
+<text text-anchor="start" x="114" y="-145.4" font-family="Arial" font-size="7.00">text</text>
+<polygon fill="none" stroke="black" points="161,-140 161,-154 190,-154 190,-140 161,-140"/>
+<polygon fill="none" stroke="black" points="62,-126 62,-140 111,-140 111,-126 62,-126"/>
 <text text-anchor="start" x="65" y="-131.4" font-family="Arial" font-size="7.00">RiskCategory</text>
-<polygon fill="none" stroke="black" points="112,-126 112,-140 162,-140 162,-126 112,-126"/>
-<text text-anchor="start" x="115" y="-131.4" font-family="Arial" font-size="7.00">Characteristic</text>
-<polygon fill="none" stroke="black" points="162,-126 162,-140 191,-140 191,-126 162,-126"/>
+<polygon fill="none" stroke="black" points="111,-126 111,-140 161,-140 161,-126 111,-126"/>
+<text text-anchor="start" x="114" y="-131.4" font-family="Arial" font-size="7.00">Characteristic</text>
+<polygon fill="none" stroke="black" points="161,-126 161,-140 190,-140 190,-126 161,-126"/>
 </a>
 </g>
 </g>
-<!-- SituationAssessment&#45;&gt;table_port20 -->
+<!-- SituationAssessment&#45;&gt;table_port40 -->
 <g id="edge1" class="edge">
-<title>SituationAssessment:20&#45;&gt;table_port20</title>
-<path fill="none" stroke="black" d="M192,-133C217.12,-133 226.34,-103.78 229.58,-78.09"/>
+<title>SituationAssessment:40&#45;&gt;table_port40</title>
+<path fill="none" stroke="black" d="M191,-133C216.22,-133 225.74,-103.78 229.23,-78.09"/>
 </g>
 <!-- Concept_Responsible\nOrganisation -->
 <g id="node3" class="node">
@@ -100,7 +100,7 @@
 <title>SituationAssessment&#45;&gt;Concept_Responsible\nOrganisation</title>
 <path fill="none" stroke="black" d="M94.02,-121.87C82.61,-105.78 69.99,-87.96 59.44,-73.07"/>
 <polygon fill="black" stroke="black" points="62.13,-70.81 53.49,-64.68 56.41,-74.86 62.13,-70.81"/>
-<text text-anchor="middle" x="85.5" y="-98.4" font-family="Arial" font-size="7.00">by</text>
+<text text-anchor="middle" x="85" y="-98.4" font-family="Arial" font-size="7.00">by</text>
 </g>
 <!-- Concept_Case -->
 <g id="node4" class="node">

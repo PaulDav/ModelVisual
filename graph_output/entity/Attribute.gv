@@ -15,4 +15,6 @@ digraph {
 	"ConceptOf_Lead\nOrganisation" -> Attribute [label=receives]
 	"ConceptOf_Risk\nAssessment" [label="Risk\nAssessment" URL="#Attribute" fixedsize=true height=0.8 style=filled width=1.0]
 	"ConceptOf_Risk\nAssessment" -> Attribute [label=uses]
+	"ConceptOf_Source\nOrganisation" [label="Source\nOrganisation" URL="#Attribute" fixedsize=true height=0.8 style=filled width=1.0]
+	"ConceptOf_Source\nOrganisation" -> Attribute [label=provides]
 }

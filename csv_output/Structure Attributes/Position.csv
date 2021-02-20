@@ -1,0 +1,3 @@
+Attribute,Description,Field Type,Occurs,Required?,Source,Permitted Values
+latitude,The latitude of a position expressed using the WGS84 datum,number,,yes,https://www.hl7.org/fhir/location-definitions.html#Location.position.latitude,
+longitude,The longitude of a position expressed using the WGS84 datum,number,,yes,https://www.hl7.org/fhir/location-definitions.html#Location.position.longitude,

@@ -1,0 +1,11 @@
+Attribute,Description,Field Type,Structure,Occurs,Required?,Source,Permitted Values
+Type,"The type of need - such as
+* access to shopping
+* access to medicine
+* financial stability
+* remaining in the current accommodation
+",,Characteristic,once,yes,fhir:EpisodeOfCare.diagnosis.condition ,
+Rationale,The reasoning for the need.,text,,,,,
+Date,The date that the need is established,date,,,,,
+EndDate,The date that the need was resolved,date,,,,,
+Target Date,The date that the need should be resolved by for it to be effective.,date,,,,,

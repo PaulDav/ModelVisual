@@ -121,7 +121,7 @@
 <title>ContactEvent&#45;&gt;Concept_Responsible\nOrganisation</title>
 <path fill="none" stroke="black" d="M126,-121.81C126,-107.43 126,-92.09 126,-78.63"/>
 <polygon fill="black" stroke="black" points="129.5,-78.28 126,-68.28 122.5,-78.28 129.5,-78.28"/>
-<text text-anchor="middle" x="149" y="-98.4" font-family="Arial" font-size="7.00">passes info to</text>
+<text text-anchor="middle" x="148.5" y="-98.4" font-family="Arial" font-size="7.00">passes info to</text>
 </g>
 </g>
 </svg>

@@ -1,0 +1,22 @@
+Attribute,Description,Field Type,Structure,Occurs,Required?,Source,Permitted Values
+Identifier,"A references by which the organisation is known. e.g.
+
+* GDS Register of Local Authorities
+* Companies House Number
+* Charity Number",,Identifier,many,,fhir:Organization.identifier ,
+Type,"To indicate the type of Organisation.  One of
+
+* Local Authority
+* Government Department
+* Community or Voluntary Group
+* Private Sector
+* Other
+",lookup,,,,fhir:Organization.type,"∙ Local Authority
+∙ Government Department
+∙ Community or Voluntary Group
+∙ Private Sector
+∙ Other"
+Name,,string,,,yes,fhir:Organization.name,
+Department,a part of the organisation,string,,,,fhir:Organization.name,
+ContactPerson,,string,,,,,
+ContactPoint,,,ContactPoint,many,,,

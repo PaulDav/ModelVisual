@@ -1,0 +1,17 @@
+Attribute,Description,Field Type,Structure,Occurs,Required?,Source,Permitted Values
+Date,The Date that the contact took place,date,,,,,
+ContactRole,"To indicate the role that is providing information about the Case. e.g. Vulnerable Person, Relative, Public, Professional, Community Group, Elected Representative",,Characteristic,,,,
+ContactPerson,The name of the person providing information. ,string,,,,,
+ContactMethod,The method that was used to make the contact.,lookup,,,,,"∙ phone
+∙ at home
+∙ letter
+∙ text
+∙ web form
+∙ email
+∙ face-2-face"
+ContactDirection,"To indicate if the contact was initiated by the Subject or a support organisation.
+
+One-off
+* Outbound
+* Inbound",lookup,,,,,"∙ inbound
+∙ outbound"

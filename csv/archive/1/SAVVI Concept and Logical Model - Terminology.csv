@@ -1,0 +1,8 @@
+savvi:AttributeTypes,,savv:OrganisationTypes,,,hl7:contact-point-system,,,savvi:ContactMethods,,savvi:ContactDirections
+Circumstance,,Local Authority,,,email,,,phone,,inbound
+Event,,Government Department,,,phone,,,at home,,outbound
+Risk,,Community or Voluntary Group,,,sms,,,letter,,
+Service,,Private Sector,,,,,,text,,
+,,Other,,,,,,web form,,
+,,,,,,,,email,,
+,,,,,,,,face-2-face,,

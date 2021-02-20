@@ -1,0 +1,13 @@
+Attribute,Description,Field Type,Structure,Occurs,Required?,Source,Permitted Values
+Type,"The type of Attribute - one of
+* Circumstance
+* Event
+* Risk
+* Service
+",lookup,,,,,"∙ Circumstance
+∙ Event
+∙ Risk
+∙ Service"
+Characteristic,"To describe the Attribute. e.g. In receipt of Universal Credit, Living Alone.",,Characteristic,,,,
+Date,The date from which the attribute is true,date,,,,,
+EndDate,The date from which the attribute ended or is expected to end.,date,,,,,

@@ -1,0 +1,3 @@
+Attribute,Description,Field Type,Structure,Occurs,Required?,Source,Permitted Values
+Date,The Date that the Risk Category was established,date,,,,,
+Category,A category to match the Risk Stratification Policy,,Characteristic,,yes,,

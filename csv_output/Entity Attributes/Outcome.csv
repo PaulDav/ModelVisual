@@ -1,0 +1,7 @@
+Attribute,Description,Field Type,Structure,Occurs,Required?,Source,Permitted Values
+Category,"A Categorisation of the Outcome, such as
+* now supported by family or friends
+* lock-down over
+* sustainable tenancy",,Characteristic,,,,
+Description,,text,,,,,
+Date,the date that the Outcome was acheived,date,,,,,
