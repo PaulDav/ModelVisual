@@ -2,6 +2,8 @@
 
 This project takes a concept model and a logical model defined in a set of CSV files, and generates visualisations.
 
+See [a video explaining how it works.](https://youtu.be/Ud1SjwEutwU)
+
 This has been used to define the SAVVI concept and logical models - see [SAVVI Concept Model](https://coda.io/@savvi/welcome/the-savvi-concept-model-21) and [SAVVI Logical Model](https://coda.io/@savvi/welcome/the-savvi-logical-model-22)
 
 For the SAVVI example, the models are defined in a [google sheet](https://docs.google.com/spreadsheets/d/1v9dlS6dZaIJnvETSaWGWARgv9fhCkQEs-9qfvf9VA4k/edit?usp=sharing).  A CSV file is generated from each tab, and contained in the csv folder.
